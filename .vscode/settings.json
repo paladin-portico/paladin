@@ -1,0 +1,4 @@
+{
+	"editor.linkedEditing": true,
+	"eslint.validate": ["javascript", "javascriptreact", "svelte"]
+}
