@@ -7,9 +7,11 @@
 	<div class="py-4 flex items-center justify-between maximum">
 		<Logo />
 
-		<ul class="flex space-x-20 *:capitalize *:text-lg *:font-semibold">
-			<li class="hover:text-primary transition"><a href="/">why paladin</a></li>
-			<li class="hover:text-primary transition"><a href="/">pricing</a></li>
+		<ul class="flex space-x-20 *:capitalize *:font-semibold *:text-foreground/60">
+			<li class=" hover:text-primary transition">
+				<a href="/about">why paladin</a>
+			</li>
+			<li class="hover:text-primary transition"><a href="/pricing">pricing</a></li>
 			<li class="hover:text-primary transition"><a href="/">release note</a></li>
 		</ul>
 
