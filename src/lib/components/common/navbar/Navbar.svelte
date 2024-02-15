@@ -9,7 +9,6 @@
 		<Logo />
 
 		<NavList />
-
 		<Button class="capitalize block">get started</Button>
 	</div>
 </nav>
