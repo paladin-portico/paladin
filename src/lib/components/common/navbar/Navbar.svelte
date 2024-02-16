@@ -7,7 +7,6 @@
 <nav class="border-b">
 	<div class="py-4 flex items-center justify-between maximum">
 		<Logo />
-
 		<NavList />
 		<Button class="capitalize block">get started</Button>
 	</div>

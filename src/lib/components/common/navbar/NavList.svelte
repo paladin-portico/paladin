@@ -18,7 +18,7 @@
 	];
 </script>
 
-<ul class="flex space-x-20 *:capitalize *:text-lg *:font-semibold">
+<ul class="flex space-x-20 *:capitalize *:text-md *:font-semibold">
 	{#each data as item (item.id)}
 		<li class="hover:text-primary transition"><a href={item.link}>{item.item}</a></li>
 	{/each}
