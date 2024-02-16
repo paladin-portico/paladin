@@ -22,11 +22,13 @@
 		--primary: 18 100% 50%; /* done */
 		--primary-foreground: 210 40% 98%; /* done */
 
-		--secondary: 210 40% 96.1%;
+		--secondary: 216 57% 18%; /* done */
 		--secondary-foreground: 222.2 47.4% 11.2%;
 
-		--accent: 21 100% 87%;
+		--accent: 18 100% 96%; /* done */
 		--accent-foreground: 222.2 47.4% 11.2%;
+
+		--night: 158 31% 7%; /* done */
 
 		--destructive: 0 72.2% 50.6%;
 		--destructive-foreground: 210 40% 98%;
@@ -73,7 +75,7 @@
 		@apply border-border;
 	}
 	body {
-		@apply bg-background text-foreground;
+		@apply bg-accent text-foreground;
 	}
 	/* p {
 		@apply poppins-regular;
@@ -82,7 +84,7 @@
 
 @layer components {
 	.maximum {
-		@apply max-w-6xl mx-auto;
+		@apply max-w-7xl mx-auto;
 	}
 }
 
