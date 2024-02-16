@@ -3,7 +3,7 @@
 	import Button from '$lib/components/ui/button/button.svelte';
 </script>
 
-<nav class="border-b">
+<nav class="shadow">
 	<div class="py-4 flex items-center justify-between maximum">
 		<Logo />
 
