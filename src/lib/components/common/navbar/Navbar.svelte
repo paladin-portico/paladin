@@ -4,7 +4,7 @@
 	import NavList from './NavList.svelte';
 </script>
 
-<nav class="shadow">
+<nav class="sticky top-0 z-50 shadow bg-white">
 	<div class="py-4 flex items-center justify-between maximum">
 		<Logo />
 		<NavList />

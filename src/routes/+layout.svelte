@@ -6,7 +6,6 @@
 </script>
 
 <!-- <Preloader /> -->
-
-<Navbar />
-<slot />
-<Footer/>
+	<Navbar />
+	<slot />
+	<Footer />

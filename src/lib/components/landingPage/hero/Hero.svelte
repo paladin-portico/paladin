@@ -18,7 +18,7 @@
 	<div class="maximum w-full h-full flex">
 		<div class="hero-texts lg:w-1/2">
 			<div class="">
-				<h1 class="text-5xl font-bold text-secondary uppercase lg:w-[85%]">
+				<h1 class="text-5xl font-bold text-secondary uppercase lg:w-[85%] leading-tight">
 					<!-- with <span class="text-primary">paladin</span> you can <br /> -->
 					you can effectively <br />
 					<span> build your cv </span>
