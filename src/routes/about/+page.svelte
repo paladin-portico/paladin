@@ -1,4 +1,7 @@
 <script lang="ts">
+	import aboutImage from '$lib/assets/about-us.jpg';
+	import paladinAudio from '$lib/assets/audio/paladin.mp3';
+
 	import { Volume1, Github, Linkedin, Twitter } from 'lucide-svelte';
 
 	let audio: HTMLAudioElement;
@@ -9,7 +12,7 @@
 </script>
 
 <section>
-	<div class=" w-full py-14">
+	<div class=" w-full py-16">
 		<!-- header -->
 		<div class="maximum">
 			<p class="uppercase text-primary font-medium tracking-wider">this is Paladin</p>
@@ -17,14 +20,14 @@
 				<h1 class="text-5xl font-bold w-[50%] leading-tight">
 					We seek to make job applications easier...<br /> from the applicant's POV
 				</h1>
-				<div class="w-[40%]">
+				<div class="w-[40%] ">
 					<div class="flex items-start gap-2">
 						<button
 							class="bg-secondary rounded-full w-8 h-8 grid place-items-center pl-1 cursor-pointer"
 							on:click={playAudio}
 						>
 							<audio preload="auto" bind:this={audio}>
-								<source src="/public/audio/paladin.mp3" type="audio/mpeg" />
+								<source src={paladinAudio} type="audio/mpeg" />
 								Your browser does not support the audio element.
 							</audio>
 							<Volume1 class="text-white" />
@@ -37,7 +40,7 @@
 							<div class="mt-1">
 								<span class="flex space-x-2">
 									<i class="text-sm">noun</i>
-									<p class="capitalize bg-night/50 text-white px-2 py-1 text-xs rounded">
+									<p class="capitalize bg-night/50 text-white px-2 py-1 text-xs">
 										historical
 									</p>
 								</span>
@@ -54,7 +57,11 @@
 		</div>
 		<!-- Image -->
 		<div class="h-[38rem] w-full overflow-hidden my-14">
-			<img src="/public/images/about-us.jpg" alt="" class="object-top w-full h-full object-cover" />
+			<img
+				src={aboutImage}
+				alt="people working in collaboration"
+				class="object-top w-full h-full object-cover"
+			/>
 		</div>
 		<!-- Story -->
 		<section class="maximum">
@@ -121,7 +128,7 @@
 					<h3 class="text-4xl font-bold capitalize w-[40%]">the crew behind the scene</h3>
 					<div class="w-[50%] flex flex-wrap justify-between">
 						<div class="w-44">
-							<img src="/public/images/profile-1.jpg" alt="" class="w-full rounded-md" />
+							<img src="/public/images/profile-1.jpg" alt="" class="w-full " />
 							<h3 class="capitalize my-2">john doe</h3>
 							<span class="flex items-center *:text-primary *:w-8 justify-between">
 								<Linkedin class="" />
@@ -130,7 +137,7 @@
 							</span>
 						</div>
 						<div class="w-44">
-							<img src="/public/images/profile-2.jpg" alt="" class="w-full rounded-md" />
+							<img src="/public/images/profile-2.jpg" alt="" class="w-full " />
 							<h3 class="capitalize my-2">john doe</h3>
 							<span class="flex items-center *:text-primary *:w-5 justify-between">
 								<Linkedin class="" />
@@ -139,7 +146,7 @@
 							</span>
 						</div>
 						<div class="w-44">
-							<img src="/public/images/profile-1.jpg" alt="" class="w-full rounded-md" />
+							<img src="/public/images/profile-1.jpg" alt="" class="w-full " />
 							<h3 class="capitalize my-2">jane doe</h3>
 							<span class="flex items-center *:text-primary *:w-5 justify-between">
 								<Linkedin class="" />
