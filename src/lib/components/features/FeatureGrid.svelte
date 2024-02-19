@@ -2,6 +2,7 @@
 	<div class="card">
 		<p class="h-full flex justify-center items-center">Lorem, ipsum dolor.</p>
 	</div>
+
 	<div class="card">
 		<img src="public/images/img.jpg" alt="" class="w-[100%] h-[60%]" />
 		<div class="mt-6 p-6">
@@ -9,6 +10,7 @@
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, iure!</p>
 		</div>
 	</div>
+
 	<div class="card">
 		<img src="public/images/img.jpg" alt="" class="w-[100%] h-[50%]" />
 		<div class="text-white mt-6 p-6">
@@ -16,9 +18,11 @@
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, iure!</p>
 		</div>
 	</div>
+
 	<div class="card">
 		<p class="h-full flex justify-center items-center">Lorem ipsum dolor sit.</p>
 	</div>
+
 	<div class="card">
 		<p class="py-10 p-6">
 			Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, deserunt.
