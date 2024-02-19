@@ -33,6 +33,7 @@
 		<div class="text-white mt-6 p-6">
 			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, quia.</p>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, beatae?</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, harum.</p>
 		</div>
 	</div>
 </section>
