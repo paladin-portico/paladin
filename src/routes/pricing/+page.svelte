@@ -31,25 +31,16 @@
 			plan: 'premium',
 			icon: Palmtree,
 			cost: 100,
-			planFeature: [
-				'lorem',
-				'ipsum',
-				'loquit',
-				'loream',
-				'ipsudm',
-			],
+			planFeature: ['lorem', 'ipsum', 'loquit', 'loream', 'ipsudm'],
 			recommend: false,
 			color: '#E066FF',
 			description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
 		}
 	];
-
-	let isYearly: boolean = false;
 </script>
 
 <section class="py-16">
 	<div class="maximum">
-		
 		<div class="flex flex-col items-center lg:gap-6">
 			<p class="uppercase text-primary font-medium tracking-wider">pricing plans</p>
 			<div class="flex flex-col items-center lg:gap-6 lg:justify-between *:text-center">
@@ -66,21 +57,12 @@
 		</div>
 
 		<!-- PRICING CONTROL -->
-		<PeriodToggle {isYearly} />
+		<PeriodToggle />
 
 		<!-- PRICING -->
 		<section class="flex lg:flex-row space-x-8 mt-14">
 			{#each data as { id, plan, icon, cost, planFeature, recommend, color, description } (id)}
-				<PriceCard
-					{icon}
-					{plan}
-					{isYearly}
-					{cost}
-					{planFeature}
-					{recommend}
-					{color}
-					{description}
-				/>
+				<PriceCard {icon} {plan} {cost} {planFeature} {recommend} {color} {description} />
 			{/each}
 		</section>
 	</div>
