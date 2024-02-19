@@ -1,5 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
+	import { Sparkles } from 'lucide-svelte';
 
 	let imgSrc = 'public/images/img.jpg';
 
@@ -14,14 +15,19 @@
 	});
 </script>
 
-<section class="relative h-full py-10">
+<section class="relative h-full py-14">
 	<div class="maximum w-full h-full flex">
 		<div class="hero-texts lg:w-1/2">
 			<div class="">
-				<h1 class="text-5xl font-bold text-secondary uppercase lg:w-[85%] leading-tight">
-					<!-- with <span class="text-primary">paladin</span> you can <br /> -->
-					you can effectively <br />
-					<span> build your cv </span>
+				<h1
+					class="text-5xl font-bold text-secondary uppercase lg:w-[100%] lg:h[180px] leading-tight"
+				>
+					the <span class="inline-block relative text-primary">
+						<Sparkles class="absolute text-primary -top-3 right-0" /> 
+						magic
+						wand</span
+					>
+					for job applications
 				</h1>
 				<p class="pt-4 text-secondary text-lg lg:w-[95%]">
 					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate, asperiores. Quam,

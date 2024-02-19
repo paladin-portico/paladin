@@ -60,7 +60,7 @@
 		<PeriodToggle />
 
 		<!-- PRICING -->
-		<section class="flex lg:flex-row space-x-8 mt-14">
+		<section class="flex lg:flex-row lg:justify-center w-full space-x-8 mt-14">
 			{#each data as { id, plan, icon, cost, planFeature, recommend, color, description } (id)}
 				<PriceCard {icon} {plan} {cost} {planFeature} {recommend} {color} {description} />
 			{/each}
