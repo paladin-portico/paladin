@@ -2,6 +2,7 @@
 	import { BrainCircuit } from 'lucide-svelte';
 	// import SkillAvatar from './interations/SkillAvatar.svelte';
 	import interview from '$lib/assets/interview-1.jpg';
+
 </script>
 
 <section class="maximum gridbox mt-10">

@@ -1,5 +1,6 @@
 <script lang="ts">
-	import FeatureGrid from './FeatureGrid.svelte';
+	// import FeatureGrid from './FeatureGrid.svelte';
+	import FeatureList from './FeatureList.svelte';
 </script>
 
 <section class="maximum py-14">
@@ -8,11 +9,18 @@
 			<p class="capitalize font-bold text-primary">features</p>
 		</div>
 
-		<h1 class="font-semibold text-3xl">Lorem ipsum dolor sit amet consectetur.</h1>
+		<h1 class="font-semibold text-3xl">
+			Now you can manage job applications seamlessly with <span class="text-primary">Paladin</span>.
+		</h1>
 		<p class="">
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci saepe vitae vel, doloribus
-			distinctio nesciunt quas laborum nihil consectetur in!
+			Have you seen the various tools used by employers to supposedly <span
+				class="uppercase decoration-[3px] font-bold text-lg decoration-primary decoration-wavy line-through"
+			>
+				separate the good candidates from the bad eggs?
+			</span>
+			Explore some of our rich features to put you ahead of the game!
 		</p>
 	</div>
-	<FeatureGrid />
+	<FeatureList />
+	<!-- <FeatureGrid /> -->
 </section>
