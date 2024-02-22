@@ -1,109 +1,58 @@
 <script>
-	import { onMount } from 'svelte';
 	import { Sparkles } from 'lucide-svelte';
 
-	let imgSrc = 'public/images/img.jpg';
+	// import { onMount } from 'svelte';
+	// let imgSrc = 'public/images/img.jpg';
 
-	onMount(() => {
-		let interval = setInterval(() => {
-			imgSrc = imgSrc === 'public/images/cv.png' ? 'public/images/img.jpg' : 'public/images/cv.png';
-		}, 3000);
+	// onMount(() => {
+	// 	let interval = setInterval(() => {
+	// 		imgSrc = imgSrc === 'public/images/cv.png' ? 'public/images/img.jpg' : 'public/images/cv.png';
+	// 	}, 3000);
 
-		return () => {
-			clearInterval(interval);
-		};
-	});
+	// 	return () => {
+	// 		clearInterval(interval);
+	// 	};
+	// });
 </script>
 
 <section class="relative h-full py-14">
-	<div class="maximum w-full h-full flex">
-		<div class="hero-texts lg:w-1/2">
-			<div class="">
-				<h1
-					class="text-5xl font-bold text-secondary uppercase lg:w-[100%] lg:h[180px] leading-tight"
-				>
+	<div class="maximum w-full h-full flex justify-center">
+		<div class="hero-texts">
+			<div class="text-center">
+				<h1 class="text-7xl font-bold text-secondary uppercase leading-tight">
 					the <span class="inline-block relative text-primary">
-						<Sparkles class="absolute text-primary -top-3 right-0" /> 
-						magic
-						wand</span
+						<Sparkles class="absolute text-primary -top-3 right-0" />
+						magic wand</span
 					>
 					for job applications
 				</h1>
-				<p class="pt-4 text-secondary text-lg lg:w-[95%]">
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate, asperiores. Quam,
-					recusandae minus. Error, ratione? Odio earum aperiam iure hic adipisci? Tempore itaque
-					modi maxime placeat deleniti beatae iure molestiae.
+				<p class="pt-4 text-secondary text-lg lg:max-w-3xl mx-auto">
+					Paladin is a job application manager from the applicant's POV. Apply to mail-provided
+					vacancies without stress through predefined skill-based profiles of your various skill and many more features.
 				</p>
 			</div>
 
-			<div class="w-full flex items-start justify-between mt-6">
-				<div class="w-56">
+			<div class="w-full lg:max-w-2xl mx-auto flex items-start justify-between gap-6 mt-10">
+				<a
+					href="/about"
+					class="hover:text-white transition-all ease-linear duration-200 bg-black/10 hover:bg-primary p-4 w-full flex items-center flex-col text-center"
+				>
 					<p class="text-xl capitalize mt-4 font-bold">Lorem ipsum dolor sit.</p>
 
 					<p class="text-sm mt-4">Lorem ipsum dolor sit amet sectetur adipisicing elit.</p>
-
-					<a
-						href=" "
-						class="w-max block capitalize underline underline-offset-4 mt-10 font-bold text-secondary hover:text-primary"
-						>get started</a
-					>
-				</div>
-				<div class="w-56">
+				</a>
+				<a
+					href="/"
+					class="hover:text-white transition-all ease-linear duration-200 bg-black/10 hover:bg-primary p-4 flex w-full items-center flex-col text-center"
+				>
 					<p class="text-xl capitalize mt-4 font-bold">Lorem ipsum dolor sit.</p>
 
 					<p class="text-sm mt-4">Lorem ipsum dolor sit amet sectetur adipisicing elit.</p>
-
-					<a
-						href=" "
-						class="w-max block capitalize underline underline-offset-4 mt-10 font-bold text-secondary hover:text-primary"
-						>get started</a
-					>
-				</div>
-			</div>
-		</div>
-
-		<div class="hero-image bg-primary w-full h-full lg:w-1/2 ml-16 relative">
-			<img src={imgSrc} alt="profile img" class="custom-pulse h-60 w-64 ml32 mt52 animate-pulse" />
-
-			<div class="w-48 h-48 pl-2 absolute top-28 -left-24">
-				<div
-					class="w-44 h-12 py-3 bg-black text-white text-center rounded-lg absolut animate-bounce"
-				>
-					<p>Lorem, ipsum dolor.</p>
-				</div>
-
-				<div class="w-44 h-12 py-3 bg-black text-white text-center rounded-lg absolute top-14">
-					<p>Lorem, ipsum.</p>
-				</div>
-
-				<div class="w-44 h-12 py-3 bg-black text-white text-center rounded-lg absolute bottom-8">
-					<p>Lorem, ipsum ygiu.</p>
-				</div>
-			</div>
-
-			<div>
-				<div
-					class="w-56 h-30 py-3 bg-black text-white text-center rounded-lg absolute right-10 bottom-16 animate-bounce"
-				>
-					<p class="font-bold">Lorem, ipsum dolor.</p>
-					<p class="text-sm text-gray-500">Lorem, ipsum.</p>
-					<p class="text-sm font-light">Lorem, ipsum dolor.</p>
-				</div>
-
-				<div
-					class="custom-pulse w-56 h-30 py-3 bg-black text-white text-center rounded-lg absolute right-10 -bottom-12 animate-pulse"
-				>
-					<p class="font-bold">Lorem, ipsum dolor.</p>
-					<p class="text-sm text-gray-500">Lorem, ipsum.</p>
-					<p class="text-sm font-light">Lorem, ipsum dolor.</p>
-				</div>
+				</a>
 			</div>
 		</div>
 	</div>
 </section>
 
 <style>
-	.custom-pulse {
-		animation: pulse 10s infinite;
-	}
 </style>
