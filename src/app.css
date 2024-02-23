@@ -84,6 +84,7 @@
 		@apply bg-accent-light;
 	}
 
+
 	::selection {
 		background-color: #ff4d00;
 		color: white;

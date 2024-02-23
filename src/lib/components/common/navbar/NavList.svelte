@@ -11,12 +11,12 @@
 			id: 2,
 			item: 'pricing',
 			link: '/pricing'
-		},
-		{
-			id: 3,
-			item: 'release note',
-			link: '/'
 		}
+		// {
+		// 	id: 3,
+		// 	item: 'release note',
+		// 	link: '/'
+		// }
 	];
 </script>
 
@@ -26,7 +26,8 @@
 			<a
 				data-sveltekit-preload-code="eager"
 				href={item.link}
-				class={`transition duration-300 ${$page.url.pathname === item.link ? 'text-primary' : ''}`}>{item.item}</a
+				class={`transition duration-300 ${$page.url.pathname === item.link ? 'text-primary' : ''}`}
+				>{item.item}</a
 			>
 		</li>
 	{/each}
