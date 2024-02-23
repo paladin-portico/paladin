@@ -1,62 +1,35 @@
 <script lang="ts">
+	import ProfileCards from './interations/ProfileCards.svelte';
 	import { LineChart } from 'lucide-svelte';
 	import analytics from '$lib/assets/analytics.jpg';
 	import analytics1 from '$lib/assets/analytics-1.jpg';
+	import { register } from 'swiper/element/bundle';
 
-	const data = [
-		{
-			id: 1,
-			imgSrc: 'public/images/img.jpg',
-			title: 'frontend engineer'
-		}
-		// {
-		// 	id: 2,
-		// 	imgSrc: 'public/images/cv.png',
-		// 	title: 'frontend engineer'
-		// },
-		// {
-		// 	id: 3,
-		// 	imgSrc: 'public/images/img.jpg',
-		// 	title: 'frontend engineer'
-		// }
-	];
+	register();
 </script>
 
-<section class="maximum">
-	<div class="h-[400px] mt-20 flex gap-8">
+<section class="maximum mt-20 flex flex-col gap-24">
+	<div class="h-[400px] flex gap-8 items-center justify-between overflow-hidden">
 		<!-- The text session -->
-		<div class="w-[60%] h-full py-20">
-			<h1 class="text-4xl font-semibold leading-tight">
-				Lorem ipsum <br /> dolor sit Lorem, ipsum.
+		<div class="w-1/2">
+			<h1 class="mb-4 leading-tight text-4xl capitalize font-semibold">
+				Dynamic Skill-Based Profile Creation
 			</h1>
-			<p class="my-8 pr-8">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, maxime. Labore
-				explicabo omnis laborum iste ad facilis ipsam pariatur magni.
+			<p class="">
+				Designed for versatility and precision, this innovative tool allows you to craft and manage
+				multiple profiles, each highlighting a distinct Resume, set of skills and experiences.
+				Tailor your professional presentation for various job roles, ensuring you always put your
+				best foot forward.
 			</p>
 		</div>
-
 		<!-- The card session -->
-		<div class="w-[40%]">
-			{#each data as item (item.id)}
-				<div class="card w-[70%] h-[23rem] border-2 mx-auto rounded-xl">
-					<img src={item.imgSrc} alt="profile" class="w-[90%] h-[60%] my-4 mx-auto rounded-xl" />
-					<div>
-						<div class="capitalize ml-6">
-							<h3 class="text-lg font-bold">{item.title}</h3>
-							<p>ipsum d</p>
-						</div>
-						<div class="w-full h-[50px] bg-black mt-[14px] rounded-b-xl text-center">
-							<h2 class="text-lg font-semibold uppercase py-2 text-white cursor-pointer">apply</h2>
-						</div>
-					</div>
-				</div>
-			{/each}
+		<div class="w-1/2">
+			<ProfileCards />
 		</div>
 	</div>
-</section>
 
-<section class="maximum mt-14">
-	<div class="flex gap-8 items-center justify-between h-[400px]">
+	<!-- feature 2 -->
+	<div class="flex flex-row-reverse gap-8 items-center justify-between h-[400px]">
 		<div class="w-1/2">
 			<h1 class="mb-4 leading-tight text-4xl capitalize font-semibold">
 				comprehensive reports and analytics dashboard

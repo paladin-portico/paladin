@@ -83,10 +83,7 @@
 	body {
 		@apply bg-accent-light;
 	}
-	
-	.card {
-		@apply bg-black/10;
-	}
+
 
 	::selection {
 		background-color: #ff4d00;
